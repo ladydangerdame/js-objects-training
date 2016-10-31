@@ -30,4 +30,15 @@
 
 */
 
-// YOUR CODE HERE
+function letterCount(word) {
+  var output = {};
+  var wordAsArray = word.split("");
+  wordAsArray.forEach(function(el) {
+    if (output[el]) {
+      output[el] += 1;
+    } else {
+      output[el] = 1;
+    }
+  });
+  return output
+}
