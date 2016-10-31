@@ -34,3 +34,9 @@
 */
 
 // YOUR CODE HERE
+function daysUntilDate(birthday) {
+  var date = Date.parse(birthday);
+  var thisDay = Date.now();
+  var result = ((date - thisDay)/(1000*60*60*24));
+  return "Your birthday is " + Math.round(result) + " days away";
+}
